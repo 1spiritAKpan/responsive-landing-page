@@ -1,0 +1,152 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #e020d7;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 25% auto;
+  width: 100%;
+  gap: 50px;
+  height: auto;
+}
+
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #d8d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it is above all other content */
+}
+
+.spinner {
+  border: 16px solid #e020d7; /* Light grey */
+  border-top: 16px solid #f7f7f7; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.left-container-header {
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgb(210, 217, 224);
+  height: auto;
+}
+.left-container{
+}
+    .mega {
+    background: red;
+    width: 26vw;
+    height: 100vh;
+    position: fixed;
+    padding: 10px;
+    border: 3px solid red;
+}
+.left-container-wrap {
+ padding: 15px;
+}
+
+.logo-icon {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-left: -5px;
+}
+.left-container-header-properties{
+    
+  margin-bottom: 8px;
+}
+
+.logo-text {
+  font-size: 15px;
+  margin-top: 19px;
+  font-weight: 100;
+  margin-left: -4px;
+}
+
+/* right */
+.parent {
+ gap: 10px;
+  max-width: 90%;
+
+  
+}
+.message-card{
+
+    height:30vh ;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+
+
+.right-pane{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 72vw;
+    margin: 40px;
+}
+
+
+.box_1{
+ align-items:center;
+ display: flex;
+ justify-items: center;
+}
+
+.box_2{
+ align-items:center;
+ display: flex;
+ justify-items: center;
+}
+
+.box_3{
+ align-items:center;
+ display: flex;
+ justify-items: center;
+}
+
+.box_1 .message-card{
+    width: calc(75vw / 3);
+    margin: 15px;
+}
+
+.box_2 .message-card{
+    width: calc(75vw / 3);
+    margin: 15px;
+    background-color: orangered;
+}
+
+.box_3 .message-card{
+    width: calc(75vw / 3);
+    margin: 15px;
+    background-color: orange;
+}
+
+
+
+
+
+@media(max-width:430px) {
+    
+}
+
